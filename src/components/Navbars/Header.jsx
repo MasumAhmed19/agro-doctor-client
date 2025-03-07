@@ -52,7 +52,7 @@ export default function Example() {
             <img
               alt=""
               src="https://i.ibb.co.com/9HNjny8Q/agro-doctor-logo-2.png"
-              className="h-8 w-auto"
+              className="h-9 w-auto"
             />
           </Link>
         </div>
@@ -90,7 +90,7 @@ export default function Example() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {
             user ?
-              <Link to="/dashboard" className="text-sm/6 font-semibold bg-[#d6fa9c] rounded-xl text-black px-3.5 py-1">
+              <Link to="/dashboard/overview" className="text-sm/6 font-semibold bg-[#d6fa9c] rounded-xl text-black px-3.5 py-1">
                 Go to Dashboard
               </Link>
               :
@@ -164,7 +164,7 @@ export default function Example() {
 
                 {
                   user ?
-                    <Link to="/dashboard" onClick={()=>setMobileMenuOpen(false)} className="text-sm/6 font-semibold bg-[#d6fa9c] rounded-xl text-black px-3.5 py-1">
+                    <Link to="/dashboard/overview" onClick={()=>setMobileMenuOpen(false)} className="text-sm/6 font-semibold bg-[#d6fa9c] rounded-xl text-black px-3.5 py-1">
                     Go to Dashboard
                   </Link>
                     :

@@ -1,20 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { RouterProvider } from 'react-router-dom'
-import { router } from './routes/Routes.jsx'
-import { ToastContainer } from 'react-toastify'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import AuthProvider from './providers/AuthProviders.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/Routes.jsx";
+import { ToastContainer } from "react-toastify";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import AuthProvider from "./providers/AuthProviders.jsx";
+import { DataProvider } from "./Context/DataContext.jsx";
 
 const queryClient = new QueryClient();
 
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode> 
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
     <AuthProvider>
-      <QueryClientProvider  client={queryClient}>
-        <ToastContainer 
+      <QueryClientProvider client={queryClient}>
+        <DataProvider>
+          <ToastContainer
             position="bottom-center"
             autoClose={5000}
             hideProgressBar={false}
@@ -24,9 +25,11 @@ createRoot(document.getElementById('root')).render(
             pauseOnFocusLoss
             draggable
             pauseOnHover
-            theme="light"/>  
-        <RouterProvider router={router} />
+            theme="light"
+          />
+          <RouterProvider router={router} />
+        </DataProvider>
       </QueryClientProvider>
     </AuthProvider>
   </StrictMode>
-)
+);

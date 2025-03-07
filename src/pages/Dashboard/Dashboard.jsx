@@ -29,7 +29,7 @@ const menuItems = [
     { icon: RxDashboard, label: 'Dashboard', to: '/dashboard/overview' },
     { icon: MdOutlineLandslide, label: 'Soil Management', to: '/dashboard/soil-management' },
     { icon: MdOutlineWater, label: 'Water Management', to: '/dashboard/water-management' },
-    { icon: GiField, label: 'Crop Management', to: '/dashboard/crop-management' },
+    { icon: GiField, label: 'Crop Suggestion', to: '/dashboard/crop-management' },
     { icon: TiWeatherPartlySunny, label: 'Weather and Climate', to: '/dashboard/weather-and-climate' },
     { icon: GiMagnifyingGlass, label: 'Disease Identify', to: '/dashboard/disease' },
     { icon: GiFertilizerBag, label: 'Fertilizer Suggestion', to: '/dashboard/fertilizer' },
@@ -80,7 +80,9 @@ const Dashboard = () => {
                 <div className="h-full px-3 py-4 flex flex-col">
                     {/* Close button in sidebar */}
                     <div className="mb-8 px-2 flex items-center justify-between">
-                        <img src="https://i.ibb.co.com/9HNjny8Q/agro-doctor-logo-2.png" className='w-40' alt="" />
+                        <Link to='/'>
+                            <img  src="https://i.ibb.co.com/9HNjny8Q/agro-doctor-logo-2.png" className='w-44' alt="" />
+                        </Link>
                         <button
                             onClick={closeSidebar}
                             className="lg:hidden cursor-pointer p-2 rounded-lg font-bold text-[#BEE38F] "
