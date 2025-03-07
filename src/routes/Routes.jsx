@@ -19,6 +19,8 @@ import Fertilizer from '../pages/Dashboard/Dash-Pages/Fertilizer';
 import Carbon from '../pages/Dashboard/Dash-Pages/Carbon';
 import MarketPrice from '../pages/Dashboard/Dash-Pages/MarketPrice';
 import UserProfile from '../pages/Dashboard/Dash-Pages/UserProfile';
+import LabourHire from '../pages/Dashboard/Dash-Pages/LabourHire';
+import ChatBot from '../pages/Dashboard/Dash-Pages/ChatBot';
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -79,6 +81,12 @@ export const router = createBrowserRouter([
             ,{
                 path: '/dashboard/user-profile',
                 element: <UserProfile />,
+            },{
+                path: '/dashboard/labour',
+                element: <LabourHire />,
+            },{
+                path: '/dashboard/chatbot',
+                element: <ChatBot />,
             }
         ]
     }

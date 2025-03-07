@@ -23,17 +23,19 @@ import { TbBrandCarbon } from "react-icons/tb";
 import { FaShopLock } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa6";
 import { CiLogout } from "react-icons/ci";
+import { IoIosMan } from "react-icons/io";
 import useAuth from '../../hooks/useAuth';
 
 const menuItems = [
     { icon: RxDashboard, label: 'Dashboard', to: '/dashboard/overview' },
-    { icon: MdOutlineLandslide, label: 'Soil Management', to: '/dashboard/soil-management' },
     { icon: MdOutlineWater, label: 'Water Management', to: '/dashboard/water-management' },
+    { icon: MdOutlineLandslide, label: 'Soil Management', to: '/dashboard/soil-management' },
     { icon: GiField, label: 'Crop Suggestion', to: '/dashboard/crop-management' },
-    { icon: TiWeatherPartlySunny, label: 'Weather and Climate', to: '/dashboard/weather-and-climate' },
     { icon: GiMagnifyingGlass, label: 'Disease Identify', to: '/dashboard/disease' },
     { icon: GiFertilizerBag, label: 'Fertilizer Suggestion', to: '/dashboard/fertilizer' },
     { icon: TbBrandCarbon, label: 'Carbon Footprint', to: '/dashboard/carbon-footprint' },
+    { icon: IoIosMan, label: 'Labour Hire', to: '/dashboard/labour' },
+    { icon: TiWeatherPartlySunny, label: 'ChatBot Assistance', to: '/dashboard/chatbot' },
     { icon: FaShopLock, label: 'Market Place', to: '/dashboard/market-price' },
     { icon: FaRegUser, label: 'User Profile', to: '/dashboard/user-profile' },
 

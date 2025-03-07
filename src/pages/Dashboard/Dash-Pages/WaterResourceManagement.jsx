@@ -3,6 +3,7 @@ import { Droplets, Gauge, CloudRain, Sprout } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import useData from '../../../hooks/useData';
+import LoadingSpinner from '../../../components/shared/LoadingSpinner';
 
 const WaterResourceManagement = () => {
   const { data, loading } = useData();
@@ -38,7 +39,7 @@ const WaterResourceManagement = () => {
   const bangladeshCoordinates = [23.6850, 90.3563]; // Latitude and Longitude for Bangladesh
 
   if (loading) {
-    return <div>Loading...</div>; // Add a loading state if needed
+    return <LoadingSpinner />; // Add a loading state if needed
   }
 
   return (

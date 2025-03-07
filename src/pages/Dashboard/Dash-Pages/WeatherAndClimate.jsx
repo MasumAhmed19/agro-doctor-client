@@ -176,11 +176,7 @@ const WeatherAndClimate = () => {
             </LineChart>
           </ResponsiveContainer>
         </div>
-      </div>
-
-
-
-      
+      </div> 
     </div>
   );
 };

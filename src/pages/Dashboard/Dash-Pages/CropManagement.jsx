@@ -29,7 +29,7 @@ const CropManagement = () => {
         temperature: '25-35°C',
         growthPeriod: '90-120 days',
         description: 'Short-duration rice variety suitable for summer cultivation.',
-        imageUrl: 'https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/Ldbz61sB/rice-aus-dhan.jpg'
       },
       {
         name: 'Jute',
@@ -38,7 +38,7 @@ const CropManagement = () => {
         temperature: '20-40°C',
         growthPeriod: '120-150 days',
         description: 'Major cash crop suitable for warm and humid climate.',
-        imageUrl: 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/fVrNyTBj/jute.jpg'
       },
       {
         name: 'Maize',
@@ -47,7 +47,7 @@ const CropManagement = () => {
         temperature: '20-30°C',
         growthPeriod: '90-110 days',
         description: 'Versatile crop used for food, feed, and industrial purposes.',
-        imageUrl: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/5g5YLrFj/Maizeo.jpg'
       }
     ],
     'Monsoon': [
@@ -58,7 +58,7 @@ const CropManagement = () => {
         temperature: '25-35°C',
         growthPeriod: '150-180 days',
         description: 'Long-duration rice variety cultivated during the monsoon season.',
-        imageUrl: 'https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/d0Rz51N3/ricec-aman.jpg'
       },
       {
         name: 'Sugarcane',
@@ -67,7 +67,7 @@ const CropManagement = () => {
         temperature: '20-30°C',
         growthPeriod: '10-12 months',
         description: 'Major cash crop used for sugar production.',
-        imageUrl: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/SXM6YdvM/Sugarcane.jpg'
       }
     ],
     'Winter': [
@@ -78,7 +78,7 @@ const CropManagement = () => {
         temperature: '15-20°C',
         growthPeriod: '90-120 days',
         description: 'Cool-season crop with high yield potential.',
-        imageUrl: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/TqL0KFBY/Potato.jpg'
       },
       {
         name: 'Wheat',
@@ -87,7 +87,7 @@ const CropManagement = () => {
         temperature: '15-25°C',
         growthPeriod: '120-150 days',
         description: 'Major cereal crop suitable for winter season.',
-        imageUrl: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/KcH75BVK/Wheat.jpg'
       },
       {
         name: 'Mustard',
@@ -96,7 +96,7 @@ const CropManagement = () => {
         temperature: '15-25°C',
         growthPeriod: '90-120 days',
         description: 'Oilseed crop cultivated for its seeds and oil.',
-        imageUrl: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=400'
+        imageUrl: 'https://i.ibb.co.com/gMQ38HvL/Mustard6.jpg'
       }
     ]
   };
@@ -209,7 +209,7 @@ const CropManagement = () => {
                     <img
                       src={crop.imageUrl}
                       alt={crop.name}
-                      className="w-full h-full object-cover"
+                      className="w-[280px] h-full md:h-[180px] object-cover"
                     />
                   </div>
                   <div className="w-2/3 p-6">
