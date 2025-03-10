@@ -89,6 +89,9 @@ export const router = createBrowserRouter([
                 element: <ChatBot />,
             }
         ]
+    },{
+        path:'/login',
+        element:<Login />
     }
 
 ])

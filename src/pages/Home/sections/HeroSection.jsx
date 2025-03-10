@@ -55,12 +55,12 @@ const HeroSection = () => {
                             Smart Agro-Monitor is an IoT-based precision farming system that helps farmers optimize water usage, improve soil quality, and manage crop health efficiently
                         </p>
                         <div className="mt-8 md:mt-10 flex items-center justify-center gap-x-6">
-                            <Link
-                                to='/dashboard'
+                            <a
+                                href='#whatoffers'
                                 className="rounded-md bg-[#d6fa9c] px-4 py-2.5 text-sm font-semibold text-black shadow-xs"
                             >
                                 Get started
-                            </Link>
+                            </a>
                         </div>
                     </div>
 
